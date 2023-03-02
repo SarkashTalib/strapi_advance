@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "features",
+  "info": {
+    "singularName": "feature",
+    "pluralName": "features",
+    "displayName": "feature",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "feature_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::feature-list.feature-list"
+    }
+  }
+}

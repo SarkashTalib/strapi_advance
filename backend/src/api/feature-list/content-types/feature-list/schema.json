@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feature_lists",
+  "info": {
+    "singularName": "feature-list",
+    "pluralName": "feature-lists",
+    "displayName": "feature_list"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
